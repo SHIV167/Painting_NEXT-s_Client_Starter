@@ -6,7 +6,7 @@ import { theme } from '@/lib/theme';
 
 export default function Footer() {
   return (
-    <footer className="bg-white text-gray-900">
+    <footer className="bg-white text-gray-900 border-t-4 border-amber-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12">
           {/* Brand Section */}
@@ -32,7 +32,7 @@ export default function Footer() {
             <h4 className="text-base sm:text-lg font-semibold font-display mb-6 text-gray-900">
               Quick Links
             </h4>
-            <ul className="space-y-3">
+            <ul className="space-y-3 list-none">
               {[
                 { name: 'Home', href: '/' },
                 { name: 'Gallery', href: '/gallery' },
@@ -40,7 +40,7 @@ export default function Footer() {
                 { name: 'Exhibitions', href: '/exhibitions' },
                 { name: 'Contact', href: '/contact' },
               ].map((link) => (
-                <li key={link.name}>
+                <li key={link.name} className="hover:list-none">
                   <Link
                     href={link.href}
                     className="flex items-center gap-2 group transition-colors text-gray-600 hover:text-gray-900"

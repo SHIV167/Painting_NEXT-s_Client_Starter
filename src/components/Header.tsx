@@ -10,7 +10,6 @@ export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navItems = [
-    { name: 'Home', href: '/', icon: FiHome },
     { name: 'Gallery', href: '/gallery', icon: FiImage },
     { name: 'About', href: '/about', icon: FiUser },
     { name: 'Exhibitions', href: '/exhibitions', icon: FiCalendar },
