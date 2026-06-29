@@ -2,12 +2,21 @@
 
 import { motion, AnimatePresence } from 'framer-motion';
 import Link from 'next/link';
-import { useState } from 'react';
+import { usePathname } from 'next/navigation';
+import { useState, useEffect } from 'react';
 import { FiMenu, FiX, FiHome, FiImage, FiUser, FiCalendar, FiMail } from 'react-icons/fi';
 import { theme } from '@/lib/theme';
+import { HeaderSkeleton } from '@/components/Skeleton';
 
 export default function Header() {
+  const pathname = usePathname();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => setIsLoading(false), 800);
+    return () => clearTimeout(timer);
+  }, []);
 
   const navItems = [
     { name: 'Gallery', href: '/gallery', icon: FiImage },
@@ -15,6 +24,10 @@ export default function Header() {
     { name: 'Exhibitions', href: '/exhibitions', icon: FiCalendar },
     { name: 'Contact', href: '/contact', icon: FiMail },
   ];
+
+  if (isLoading) {
+    return <HeaderSkeleton />;
+  }
 
   return (
     <>
@@ -33,11 +46,11 @@ export default function Header() {
                   alt="Art Gallery Logo"
                   width={48}
                   height={48}
-                  className="transition-transform group-hover:scale-110"
+                  className={`transition-transform group-hover:scale-110 ${pathname === '/' ? 'scale-110' : ''}`}
                 />
               </div>
               <span 
-                className="text-xl sm:text-2xl font-bold font-display bg-clip-text text-transparent hidden sm:block"
+                className={`text-xl sm:text-2xl font-bold font-display bg-clip-text text-transparent hidden sm:block ${pathname === '/' ? 'opacity-100' : 'opacity-90'}`}
                 style={{
                   backgroundImage: `linear-gradient(to right, ${theme.primary[600]}, ${theme.secondary[600]})`
                 }}
@@ -52,18 +65,35 @@ export default function Header() {
                 <Link
                   key={item.name}
                   href={item.href}
-                  className="relative px-4 py-2 transition-all duration-300 rounded-lg font-medium font-display"
-                  style={{ color: theme.neutral[600] }}
+                  className={`relative px-4 py-2 transition-all duration-300 rounded-lg font-medium font-display ${
+                    pathname === item.href ? 'text-primary-600' : ''
+                  }`}
+                  style={{
+                    color: pathname === item.href ? theme.primary[600] : theme.neutral[600],
+                    backgroundColor: pathname === item.href ? `${theme.primary[50]}30` : 'transparent'
+                  }}
                   onMouseEnter={(e) => {
-                    e.currentTarget.style.color = theme.primary[600];
-                    e.currentTarget.style.backgroundColor = `${theme.primary[50]}20`;
+                    if (pathname !== item.href) {
+                      e.currentTarget.style.color = theme.primary[600];
+                      e.currentTarget.style.backgroundColor = `${theme.primary[50]}20`;
+                    }
                   }}
                   onMouseLeave={(e) => {
-                    e.currentTarget.style.color = theme.neutral[600];
-                    e.currentTarget.style.backgroundColor = 'transparent';
+                    if (pathname !== item.href) {
+                      e.currentTarget.style.color = theme.neutral[600];
+                      e.currentTarget.style.backgroundColor = 'transparent';
+                    }
                   }}
                 >
                   {item.name}
+                  {pathname === item.href && (
+                    <motion.div
+                      layoutId="activeNav"
+                      className="absolute bottom-0 left-0 right-0 h-0.5"
+                      style={{ background: `linear-gradient(to right, ${theme.primary[600]}, ${theme.secondary[600]})` }}
+                      transition={{ type: 'spring', stiffness: 380, damping: 30 }}
+                    />
+                  )}
                 </Link>
               ))}
             </div>
@@ -108,9 +138,10 @@ export default function Header() {
                       alt="Art Gallery Logo"
                       width={40}
                       height={40}
+                      className={`transition-transform ${pathname === '/' ? 'scale-110' : ''}`}
                     />
                     <span 
-                      className="text-xl font-bold font-display bg-clip-text text-transparent"
+                      className={`text-xl font-bold font-display bg-clip-text text-transparent ${pathname === '/' ? 'opacity-100' : 'opacity-90'}`}
                       style={{
                         backgroundImage: `linear-gradient(to right, ${theme.primary[600]}, ${theme.secondary[600]})`
                       }}
@@ -139,18 +170,28 @@ export default function Header() {
                         <Link
                           href={item.href}
                           onClick={() => setIsMenuOpen(false)}
-                          className="flex items-center gap-4 px-4 py-4 rounded-xl transition-all duration-300 group"
-                          style={{ color: theme.neutral[600] }}
+                          className={`flex items-center gap-4 px-4 py-4 rounded-xl transition-all duration-300 group ${
+                            pathname === item.href ? 'border-l-4' : ''
+                          }`}
+                          style={{
+                            color: pathname === item.href ? theme.primary[600] : theme.neutral[600],
+                            background: pathname === item.href ? `linear-gradient(to right, ${theme.primary[50]}, ${theme.secondary[50]})` : 'transparent',
+                            borderColor: pathname === item.href ? theme.primary[600] : 'transparent'
+                          }}
                           onMouseEnter={(e) => {
-                            e.currentTarget.style.background = `linear-gradient(to right, ${theme.primary[50]}, ${theme.secondary[50]})`;
-                            e.currentTarget.style.color = theme.primary[600];
+                            if (pathname !== item.href) {
+                              e.currentTarget.style.background = `linear-gradient(to right, ${theme.primary[50]}, ${theme.secondary[50]})`;
+                              e.currentTarget.style.color = theme.primary[600];
+                            }
                           }}
                           onMouseLeave={(e) => {
-                            e.currentTarget.style.background = 'transparent';
-                            e.currentTarget.style.color = theme.neutral[600];
+                            if (pathname !== item.href) {
+                              e.currentTarget.style.background = 'transparent';
+                              e.currentTarget.style.color = theme.neutral[600];
+                            }
                           }}
                         >
-                          <Icon size={20} className="group-hover:scale-110 transition-transform" />
+                          <Icon size={20} className={`group-hover:scale-110 transition-transform ${pathname === item.href ? 'text-primary-600' : ''}`} style={{ color: pathname === item.href ? theme.primary[600] : '' }} />
                           <span className="font-medium font-display">{item.name}</span>
                         </Link>
                       </motion.div>

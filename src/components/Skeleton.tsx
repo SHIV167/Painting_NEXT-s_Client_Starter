@@ -115,3 +115,25 @@ export function CTASkeleton() {
     </div>
   );
 }
+
+export function HeaderSkeleton() {
+  return (
+    <div className="fixed top-0 left-0 right-0 z-50 bg-white/90 dark:bg-black/90 backdrop-blur-xl border-b border-gray-200/50 dark:border-gray-800/50 shadow-lg">
+      <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex justify-between items-center h-20">
+          <div className="flex items-center gap-3">
+            <Skeleton variant="circular" width={48} height={48} />
+            <Skeleton variant="text" width={120} height={28} className="hidden sm:block" />
+          </div>
+          <div className="hidden md:flex items-center space-x-1">
+            <Skeleton variant="rounded" width={80} height={36} />
+            <Skeleton variant="rounded" width={70} height={36} />
+            <Skeleton variant="rounded" width={100} height={36} />
+            <Skeleton variant="rounded" width={80} height={36} />
+          </div>
+          <Skeleton variant="rounded" width={48} height={48} className="md:hidden" />
+        </div>
+      </nav>
+    </div>
+  );
+}
