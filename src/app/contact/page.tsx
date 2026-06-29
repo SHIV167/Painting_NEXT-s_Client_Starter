@@ -1,8 +1,9 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { FiMail, FiMapPin, FiPhone, FiSend } from 'react-icons/fi';
+import toast, { Toaster } from 'react-hot-toast';
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -13,6 +14,12 @@ export default function Contact() {
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
+
+  // Reset form state on mount to prevent stuck "sending" state
+  useEffect(() => {
+    setIsSubmitting(false);
+    setSubmitStatus('idle');
+  }, []);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -33,13 +40,25 @@ export default function Contact() {
       if (response.ok) {
         setSubmitStatus('success');
         setFormData({ name: '', email: '', subject: '', message: '' });
+        toast.success('Message sent successfully!', {
+          duration: 4000,
+          position: 'top-right',
+        });
       } else {
         setSubmitStatus('error');
         console.error('Submit error:', data.error);
+        toast.error(data.error || 'Failed to send message. Please try again.', {
+          duration: 4000,
+          position: 'top-right',
+        });
       }
     } catch (error) {
       setSubmitStatus('error');
       console.error('Submit error:', error);
+      toast.error('Failed to send message. Please try again.', {
+        duration: 4000,
+        position: 'top-right',
+      });
     } finally {
       setIsSubmitting(false);
     }
@@ -54,6 +73,7 @@ export default function Contact() {
 
   return (
     <div className="min-h-screen bg-gray-50 dark:bg-gray-900">
+      <Toaster />
       {/* Hero Section */}
       <section className="relative h-96 flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-purple-900 via-pink-800 to-orange-700 opacity-90" />
@@ -176,9 +196,19 @@ export default function Contact() {
                   <motion.div
                     initial={{ opacity: 0, y: -10 }}
                     animate={{ opacity: 1, y: 0 }}
-                    className="p-4 bg-green-100 dark:bg-green-900/30 text-green-800 dark:text-green-300 rounded-lg"
+                    className="p-4 bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-800 rounded-lg"
                   >
-                    Thank you! Your message has been sent successfully.
+                    <div className="flex items-center gap-3">
+                      <div className="w-8 h-8 bg-green-100 dark:bg-green-800 rounded-full flex items-center justify-center">
+                        <svg className="w-5 h-5 text-green-600 dark:text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                        </svg>
+                      </div>
+                      <div>
+                        <p className="font-semibold text-green-800 dark:text-green-300">Message Sent Successfully!</p>
+                        <p className="text-sm text-green-600 dark:text-green-400">We'll get back to you within 24-48 hours.</p>
+                      </div>
+                    </div>
                   </motion.div>
                 )}
 
@@ -186,9 +216,19 @@ export default function Contact() {
                   <motion.div
                     initial={{ opacity: 0, y: -10 }}
                     animate={{ opacity: 1, y: 0 }}
-                    className="p-4 bg-red-100 dark:bg-red-900/30 text-red-800 dark:text-red-300 rounded-lg"
+                    className="p-4 bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800 rounded-lg"
                   >
-                    Failed to send message. Please try again later.
+                    <div className="flex items-center gap-3">
+                      <div className="w-8 h-8 bg-red-100 dark:bg-red-800 rounded-full flex items-center justify-center">
+                        <svg className="w-5 h-5 text-red-600 dark:text-red-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                      </div>
+                      <div>
+                        <p className="font-semibold text-red-800 dark:text-red-300">Failed to Send Message</p>
+                        <p className="text-sm text-red-600 dark:text-red-400">Please try again or contact us directly via email.</p>
+                      </div>
+                    </div>
                   </motion.div>
                 )}
               </form>
