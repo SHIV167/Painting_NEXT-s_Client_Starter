@@ -19,10 +19,10 @@ export default function About() {
           transition={{ duration: 0.8 }}
           className="relative z-10 text-center px-4"
         >
-          <h1 className="text-5xl md:text-6xl font-bold text-white mb-4">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold font-heading text-white mb-4">
             About the Artist
           </h1>
-          <p className="text-xl text-gray-200">
+          <p className="text-base md:text-lg lg:text-xl text-gray-200 font-body">
             Discover the story behind the art
           </p>
         </motion.div>
@@ -44,6 +44,8 @@ export default function About() {
                   src={artistInfo.image}
                   alt={artistInfo.name}
                   fill
+                  sizes="(max-width: 1024px) 100vw, 50vw"
+                  loading="lazy"
                   className="object-cover"
                 />
               </div>
@@ -65,7 +67,7 @@ export default function About() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: 0.2, duration: 0.6 }}
-                className="text-4xl font-bold text-gray-900 dark:text-white mb-6"
+                className="text-3xl md:text-4xl font-bold font-heading text-gray-900 dark:text-white mb-6"
               >
                 {artistInfo.name}
               </motion.h2>
@@ -75,7 +77,7 @@ export default function About() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: 0.3, duration: 0.6 }}
-                className="text-gray-600 dark:text-gray-400 mb-8 leading-relaxed text-lg"
+                className="text-base md:text-lg text-gray-600 dark:text-gray-400 mb-8 leading-relaxed font-body"
               >
                 {artistInfo.bio}
               </motion.p>
@@ -88,11 +90,11 @@ export default function About() {
                 className="space-y-6"
               >
                 <div>
-                  <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-3 flex items-center gap-2">
+                  <h3 className="text-xl font-semibold font-display text-gray-900 dark:text-white mb-3 flex items-center gap-2">
                     <FiBook className="text-purple-600" />
                     Education
                   </h3>
-                  <ul className="space-y-2 text-gray-600 dark:text-gray-400">
+                  <ul className="space-y-2 text-gray-600 dark:text-gray-400 font-body">
                     {artistInfo.education.map((edu, index) => (
                       <li key={index} className="flex items-start gap-2">
                         <span className="text-purple-600 mt-1">•</span>
@@ -103,11 +105,11 @@ export default function About() {
                 </div>
 
                 <div>
-                  <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-3 flex items-center gap-2">
+                  <h3 className="text-xl font-semibold font-display text-gray-900 dark:text-white mb-3 flex items-center gap-2">
                     <FiAward className="text-purple-600" />
                     Achievements
                   </h3>
-                  <ul className="space-y-2 text-gray-600 dark:text-gray-400">
+                  <ul className="space-y-2 text-gray-600 dark:text-gray-400 font-body">
                     {artistInfo.achievements.map((achievement, index) => (
                       <li key={index} className="flex items-start gap-2">
                         <span className="text-purple-600 mt-1">•</span>
@@ -132,10 +134,10 @@ export default function About() {
             transition={{ duration: 0.6 }}
             className="text-center mb-12"
           >
-            <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold font-heading text-gray-900 dark:text-white mb-4">
               Artistic Philosophy
             </h2>
-            <p className="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
+            <p className="text-base md:text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto font-body">
               The vision and principles that guide every creation
             </p>
           </motion.div>
@@ -169,10 +171,10 @@ export default function About() {
                 <div className="text-purple-600 mb-4 flex justify-center">
                   {item.icon}
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3">
+                <h3 className="text-lg md:text-xl font-bold font-heading text-gray-900 dark:text-white mb-3">
                   {item.title}
                 </h3>
-                <p className="text-gray-600 dark:text-gray-400">
+                <p className="text-sm md:text-base text-gray-600 dark:text-gray-400 font-body">
                   {item.description}
                 </p>
               </motion.div>
@@ -191,13 +193,13 @@ export default function About() {
             transition={{ duration: 0.6 }}
             className="text-center"
           >
-            <h2 className="text-4xl font-bold text-white mb-8">
+            <h2 className="text-3xl md:text-4xl font-bold font-heading text-white mb-8">
               Artist Statement
             </h2>
-            <blockquote className="text-2xl text-gray-200 italic leading-relaxed">
+            <blockquote className="text-lg md:text-2xl text-gray-200 italic leading-relaxed font-body">
               "Art is not just what you see, but what you make others see. My work aims to bridge the gap between traditional Indian aesthetics and contemporary artistic expression, creating pieces that resonate with viewers on a deeply personal level."
             </blockquote>
-            <p className="text-white mt-6 font-semibold">
+            <p className="text-white mt-6 font-semibold font-display text-base md:text-lg">
               — {artistInfo.name}
             </p>
           </motion.div>

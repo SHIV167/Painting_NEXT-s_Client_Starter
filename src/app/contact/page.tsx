@@ -65,10 +65,10 @@ export default function Contact() {
           transition={{ duration: 0.8 }}
           className="relative z-10 text-center px-4"
         >
-          <h1 className="text-5xl md:text-6xl font-bold text-white mb-4">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold font-heading text-white mb-4">
             Contact Us
           </h1>
-          <p className="text-xl text-gray-200">
+          <p className="text-base md:text-lg lg:text-xl text-gray-200 font-body">
             Get in touch with us for inquiries, commissions, or collaborations
           </p>
         </motion.div>
@@ -85,7 +85,7 @@ export default function Contact() {
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
-              <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-6">
+              <h2 className="text-2xl md:text-3xl font-bold font-heading text-gray-900 dark:text-white mb-6">
                 Send us a Message
               </h2>
               
@@ -203,10 +203,10 @@ export default function Contact() {
               className="space-y-8"
             >
               <div>
-                <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-6">
+                <h2 className="text-2xl md:text-3xl font-bold font-heading text-gray-900 dark:text-white mb-6">
                   Contact Information
                 </h2>
-                <p className="text-gray-600 dark:text-gray-400 mb-8">
+                <p className="text-base md:text-lg text-gray-600 dark:text-gray-400 mb-8 font-body">
                   Feel free to reach out to us through any of the following channels. We typically respond within 24-48 hours.
                 </p>
               </div>
@@ -223,9 +223,9 @@ export default function Contact() {
                     <FiMail className="text-purple-600 dark:text-purple-400 text-xl" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-gray-900 dark:text-white mb-1">Email</h3>
-                    <p className="text-gray-600 dark:text-gray-400">info@artgallery.com</p>
-                    <p className="text-gray-600 dark:text-gray-400">commissions@artgallery.com</p>
+                    <h3 className="font-semibold font-display text-gray-900 dark:text-white mb-1">Email</h3>
+                    <p className="text-gray-600 dark:text-gray-400 font-body">info@artgallery.com</p>
+                    <p className="text-gray-600 dark:text-gray-400 font-body">commissions@artgallery.com</p>
                   </div>
                 </motion.div>
 
@@ -240,9 +240,9 @@ export default function Contact() {
                     <FiPhone className="text-purple-600 dark:text-purple-400 text-xl" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-gray-900 dark:text-white mb-1">Phone</h3>
-                    <p className="text-gray-600 dark:text-gray-400">+91 98765 43210</p>
-                    <p className="text-gray-600 dark:text-gray-400">+91 12345 67890</p>
+                    <h3 className="font-semibold font-display text-gray-900 dark:text-white mb-1">Phone</h3>
+                    <p className="text-gray-600 dark:text-gray-400 font-body">+91 98765 43210</p>
+                    <p className="text-gray-600 dark:text-gray-400 font-body">+91 12345 67890</p>
                   </div>
                 </motion.div>
 
@@ -257,8 +257,8 @@ export default function Contact() {
                     <FiMapPin className="text-purple-600 dark:text-purple-400 text-xl" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-gray-900 dark:text-white mb-1">Location</h3>
-                    <p className="text-gray-600 dark:text-gray-400">
+                    <h3 className="font-semibold font-display text-gray-900 dark:text-white mb-1">Location</h3>
+                    <p className="text-gray-600 dark:text-gray-400 font-body">
                       Vedprakash Lohia<br />
                       House No-181, Room B9, 5th Floor<br />
                       Ghitorni, New Delhi<br />

@@ -38,10 +38,10 @@ export default function Gallery() {
           transition={{ duration: 0.8 }}
           className="relative z-10 text-center px-4"
         >
-          <h1 className="text-5xl md:text-6xl font-bold text-white mb-4">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold font-heading text-white mb-4">
             Art Gallery
           </h1>
-          <p className="text-xl text-gray-200">
+          <p className="text-base md:text-lg lg:text-xl text-gray-200 font-body">
             Explore our curated collection of contemporary Indian art
           </p>
         </motion.div>
@@ -57,10 +57,10 @@ export default function Gallery() {
             transition={{ duration: 0.6 }}
             className="mb-8"
           >
-            <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-2">
+            <h2 className="text-2xl md:text-3xl font-bold font-heading text-gray-900 dark:text-white mb-2">
               Featured Works
             </h2>
-            <p className="text-gray-600 dark:text-gray-400">
+            <p className="text-sm md:text-base text-gray-600 dark:text-gray-400 font-body">
               Swipe to explore our featured paintings
             </p>
           </motion.div>
@@ -86,11 +86,13 @@ export default function Gallery() {
                     src={painting.imageUrl}
                     alt={painting.title}
                     fill
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                    loading="lazy"
                     className="object-cover transition-transform duration-500 group-hover:scale-110"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
-                    <h3 className="text-xl font-bold text-white mb-1">{painting.title}</h3>
-                    <p className="text-gray-300">{painting.artist}</p>
+                    <h3 className="text-xl font-bold font-heading text-white mb-1">{painting.title}</h3>
+                    <p className="text-gray-300 font-body">{painting.artist}</p>
                   </div>
                 </div>
               </SwiperSlide>
@@ -111,7 +113,7 @@ export default function Gallery() {
           >
             <div className="flex items-center gap-2 mb-6">
               <FiFilter className="text-gray-600 dark:text-gray-400" />
-              <h2 className="text-3xl font-bold text-gray-900 dark:text-white">
+              <h2 className="text-2xl md:text-3xl font-bold font-heading text-gray-900 dark:text-white">
                 Filter by Category
               </h2>
             </div>
@@ -158,6 +160,7 @@ export default function Gallery() {
                       alt={painting.title}
                       fill
                       sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                      loading="lazy"
                       className="object-cover transition-transform duration-500 group-hover:scale-110"
                     />
                     <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
@@ -166,20 +169,20 @@ export default function Gallery() {
                   </div>
                   <div className="p-6">
                     <div className="flex items-start justify-between mb-2">
-                      <h3 className="text-xl font-bold text-gray-900 dark:text-white">
+                      <h3 className="text-xl font-bold font-heading text-gray-900 dark:text-white">
                         {painting.title}
                       </h3>
-                      <span className="px-3 py-1 bg-purple-100 dark:bg-purple-900 text-purple-600 dark:text-purple-300 text-xs rounded-full">
+                      <span className="px-3 py-1 bg-purple-100 dark:bg-purple-900 text-purple-600 dark:text-purple-300 text-xs rounded-full font-display">
                         {painting.category}
                       </span>
                     </div>
-                    <p className="text-gray-600 dark:text-gray-400 mb-2">
+                    <p className="text-gray-600 dark:text-gray-400 mb-2 font-body">
                       {painting.artist}
                     </p>
-                    <p className="text-sm text-gray-500 dark:text-gray-500 mb-3">
+                    <p className="text-sm text-gray-500 dark:text-gray-500 mb-3 font-body">
                       {painting.medium} • {painting.year}
                     </p>
-                    <p className="text-sm text-gray-600 dark:text-gray-400 line-clamp-2">
+                    <p className="text-sm text-gray-600 dark:text-gray-400 line-clamp-2 font-body">
                       {painting.description}
                     </p>
                   </div>

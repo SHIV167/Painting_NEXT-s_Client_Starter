@@ -4,6 +4,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import Link from 'next/link';
 import { useState } from 'react';
 import { FiMenu, FiX, FiHome, FiImage, FiUser, FiCalendar, FiMail } from 'react-icons/fi';
+import { theme } from '@/lib/theme';
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -36,7 +37,12 @@ export default function Header() {
                   className="transition-transform group-hover:scale-110"
                 />
               </div>
-              <span className="text-2xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent hidden sm:block">
+              <span 
+                className="text-xl sm:text-2xl font-bold font-display bg-clip-text text-transparent hidden sm:block"
+                style={{
+                  backgroundImage: `linear-gradient(to right, ${theme.primary[600]}, ${theme.secondary[600]})`
+                }}
+              >
                 Art Gallery
               </span>
             </Link>
@@ -47,7 +53,16 @@ export default function Header() {
                 <Link
                   key={item.name}
                   href={item.href}
-                  className="relative px-4 py-2 text-gray-700 dark:text-gray-300 hover:text-purple-600 dark:hover:text-purple-400 transition-all duration-300 rounded-lg hover:bg-purple-50 dark:hover:bg-purple-900/20 font-medium"
+                  className="relative px-4 py-2 transition-all duration-300 rounded-lg font-medium font-display"
+                  style={{ color: theme.neutral[600] }}
+                  onMouseEnter={(e) => {
+                    e.currentTarget.style.color = theme.primary[600];
+                    e.currentTarget.style.backgroundColor = `${theme.primary[50]}20`;
+                  }}
+                  onMouseLeave={(e) => {
+                    e.currentTarget.style.color = theme.neutral[600];
+                    e.currentTarget.style.backgroundColor = 'transparent';
+                  }}
                 >
                   {item.name}
                 </Link>
@@ -57,7 +72,10 @@ export default function Header() {
             {/* Mobile Menu Button */}
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="md:hidden p-2 rounded-xl bg-gradient-to-r from-purple-600 to-pink-600 text-white shadow-lg hover:shadow-xl transition-all duration-300"
+              className="md:hidden p-2 rounded-xl text-white shadow-lg hover:shadow-xl transition-all duration-300"
+              style={{
+                background: `linear-gradient(to right, ${theme.primary[600]}, ${theme.secondary[600]})`
+              }}
             >
               {isMenuOpen ? <FiX size={24} /> : <FiMenu size={24} />}
             </button>
@@ -92,7 +110,12 @@ export default function Header() {
                       width={40}
                       height={40}
                     />
-                    <span className="text-xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
+                    <span 
+                      className="text-xl font-bold font-display bg-clip-text text-transparent"
+                      style={{
+                        backgroundImage: `linear-gradient(to right, ${theme.primary[600]}, ${theme.secondary[600]})`
+                      }}
+                    >
                       Art Gallery
                     </span>
                   </Link>
@@ -117,10 +140,19 @@ export default function Header() {
                         <Link
                           href={item.href}
                           onClick={() => setIsMenuOpen(false)}
-                          className="flex items-center gap-4 px-4 py-4 rounded-xl text-gray-700 dark:text-gray-300 hover:bg-gradient-to-r hover:from-purple-50 hover:to-pink-50 dark:hover:from-purple-900/20 dark:hover:to-pink-900/20 hover:text-purple-600 dark:hover:text-purple-400 transition-all duration-300 group"
+                          className="flex items-center gap-4 px-4 py-4 rounded-xl transition-all duration-300 group"
+                          style={{ color: theme.neutral[600] }}
+                          onMouseEnter={(e) => {
+                            e.currentTarget.style.background = `linear-gradient(to right, ${theme.primary[50]}, ${theme.secondary[50]})`;
+                            e.currentTarget.style.color = theme.primary[600];
+                          }}
+                          onMouseLeave={(e) => {
+                            e.currentTarget.style.background = 'transparent';
+                            e.currentTarget.style.color = theme.neutral[600];
+                          }}
                         >
                           <Icon size={20} className="group-hover:scale-110 transition-transform" />
-                          <span className="font-medium">{item.name}</span>
+                          <span className="font-medium font-display">{item.name}</span>
                         </Link>
                       </motion.div>
                     );
@@ -128,7 +160,12 @@ export default function Header() {
                 </nav>
 
                 <div className="absolute bottom-6 left-6 right-6">
-                  <div className="p-4 bg-gradient-to-r from-purple-600 to-pink-600 rounded-2xl text-white">
+                  <div 
+                    className="p-4 rounded-2xl text-white"
+                    style={{
+                      background: `linear-gradient(to right, ${theme.primary[600]}, ${theme.secondary[600]})`
+                    }}
+                  >
                     <p className="text-sm font-medium mb-2">Discover Art</p>
                     <p className="text-xs opacity-90">Explore our curated collection of contemporary Indian art</p>
                   </div>

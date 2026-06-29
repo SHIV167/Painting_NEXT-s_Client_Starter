@@ -26,7 +26,7 @@ export default function Home() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2, duration: 0.8 }}
-            className="text-5xl md:text-7xl font-bold text-white mb-6"
+            className="text-4xl md:text-5xl lg:text-7xl font-bold font-heading text-white mb-6"
           >
             Discover Indian Art
           </motion.h1>
@@ -34,7 +34,7 @@ export default function Home() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4, duration: 0.8 }}
-            className="text-xl md:text-2xl text-gray-200 mb-8 max-w-2xl mx-auto"
+            className="text-lg md:text-xl lg:text-2xl text-gray-200 mb-8 max-w-2xl mx-auto font-body"
           >
             Explore a curated collection of contemporary paintings from India's finest artists
           </motion.p>
@@ -70,10 +70,10 @@ export default function Home() {
             transition={{ duration: 0.6 }}
             className="text-center mb-12"
           >
-            <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold font-heading text-gray-900 dark:text-white mb-4">
               Featured Works
             </h2>
-            <p className="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
+            <p className="text-base md:text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto font-body">
               Discover our handpicked selection of exceptional paintings from talented Indian artists
             </p>
           </motion.div>
@@ -93,6 +93,8 @@ export default function Home() {
                     src={painting.imageUrl}
                     alt={painting.title}
                     fill
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    loading="lazy"
                     className="object-cover transition-transform duration-500 group-hover:scale-110"
                   />
                   <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
@@ -105,13 +107,13 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="p-6">
-                  <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">
+                  <h3 className="text-xl font-bold font-heading text-gray-900 dark:text-white mb-2">
                     {painting.title}
                   </h3>
-                  <p className="text-gray-600 dark:text-gray-400 mb-2">
+                  <p className="text-gray-600 dark:text-gray-400 mb-2 font-body">
                     {painting.artist}
                   </p>
-                  <p className="text-sm text-gray-500 dark:text-gray-500">
+                  <p className="text-sm text-gray-500 dark:text-gray-500 font-body">
                     {painting.medium} • {painting.year}
                   </p>
                 </div>
@@ -147,22 +149,22 @@ export default function Home() {
             className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center"
           >
             <div>
-              <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-6">
+              <h2 className="text-3xl md:text-4xl font-bold font-heading text-gray-900 dark:text-white mb-6">
                 About Our Gallery
               </h2>
-              <p className="text-gray-600 dark:text-gray-400 mb-6 leading-relaxed">
+              <p className="text-base md:text-lg text-gray-600 dark:text-gray-400 mb-6 leading-relaxed font-body">
                 We are dedicated to promoting contemporary Indian art and connecting artists with art lovers worldwide. 
                 Our gallery features a diverse collection of paintings that showcase the rich cultural heritage and 
                 modern artistic expressions of India.
               </p>
-              <p className="text-gray-600 dark:text-gray-400 mb-8 leading-relaxed">
+              <p className="text-base md:text-lg text-gray-600 dark:text-gray-400 mb-8 leading-relaxed font-body">
                 From traditional landscapes to abstract expressions, our collection represents the vibrant and 
                 evolving art scene in India. We work with both established and emerging artists to bring you 
                 the finest contemporary artwork.
               </p>
               <Link
                 href="/about"
-                className="inline-flex items-center gap-2 px-8 py-3 bg-gradient-to-r from-purple-600 to-pink-600 text-white rounded-full font-semibold hover:from-purple-700 hover:to-pink-700 transition-all"
+                className="inline-flex items-center gap-2 px-6 md:px-8 py-3 bg-gradient-to-r from-purple-600 to-pink-600 text-white rounded-full font-semibold hover:from-purple-700 hover:to-pink-700 transition-all font-display text-sm md:text-base"
               >
                 Learn More <FiArrowRight />
               </Link>
@@ -172,6 +174,8 @@ export default function Home() {
                 src="https://images.unsplash.com/photo-1577720580479-7d839d829c73?w=800&h=600&fit=crop"
                 alt="Gallery Interior"
                 fill
+                sizes="(max-width: 1024px) 100vw, 50vw"
+                loading="lazy"
                 className="object-cover"
               />
             </div>
@@ -188,15 +192,15 @@ export default function Home() {
           transition={{ duration: 0.6 }}
           className="max-w-4xl mx-auto text-center"
         >
-          <h2 className="text-4xl font-bold text-white mb-6">
+          <h2 className="text-3xl md:text-4xl font-bold font-heading text-white mb-6">
             Ready to Explore the Art?
           </h2>
-          <p className="text-xl text-gray-200 mb-8">
+          <p className="text-lg md:text-xl text-gray-200 mb-8 font-body">
             Visit our gallery or browse our online collection to find the perfect piece for your space.
           </p>
           <Link
             href="/contact"
-            className="inline-flex items-center gap-2 px-8 py-3 bg-white text-gray-900 rounded-full font-semibold hover:bg-gray-100 transition-colors"
+            className="inline-flex items-center gap-2 px-6 md:px-8 py-3 bg-white text-gray-900 rounded-full font-semibold hover:bg-gray-100 transition-colors text-sm md:text-base"
           >
             Get in Touch <FiArrowRight />
           </Link>
