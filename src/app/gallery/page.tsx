@@ -30,7 +30,7 @@ export default function Gallery() {
       {/* Hero Section */}
       <section className="relative h-96 flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-purple-900 via-pink-800 to-orange-700 opacity-90" />
-        <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?w=1920&q=80')] bg-cover bg-center opacity-30" />
+        <div className="absolute inset-0 bg-[url('https://res.cloudinary.com/dj15ypnx8/image/upload/v1782740773/art-gallery/photo-1579783902614-a3fb3927b6a5.jpg')] bg-cover bg-center opacity-30" />
         
         <motion.div
           initial={{ opacity: 0, y: 30 }}

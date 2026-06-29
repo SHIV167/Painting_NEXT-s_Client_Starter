@@ -19,7 +19,7 @@ export const paintings: Painting[] = [
     medium: 'Oil on Canvas',
     dimensions: '36" x 48"',
     description: 'A vibrant depiction of the sacred river at golden hour, capturing the spiritual essence of Varanasi.',
-    imageUrl: 'https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?w=800&h=600&fit=crop',
+    imageUrl: 'https://res.cloudinary.com/dj15ypnx8/image/upload/v1782740749/art-gallery/photo-1579783902614-a3fb3927b6a5.jpg',
     category: 'Landscape'
   },
   {
@@ -30,7 +30,7 @@ export const paintings: Painting[] = [
     medium: 'Acrylic on Canvas',
     dimensions: '30" x 40"',
     description: 'An exploration of subconscious thoughts through bold colors and dynamic forms.',
-    imageUrl: 'https://images.unsplash.com/photo-1541961017774-22349e4a1262?w=800&h=600&fit=crop',
+    imageUrl: 'https://res.cloudinary.com/dj15ypnx8/image/upload/v1782740750/art-gallery/photo-1541961017774-22349e4a1262.jpg',
     category: 'Abstract'
   },
   {
@@ -41,7 +41,7 @@ export const paintings: Painting[] = [
     medium: 'Watercolor',
     dimensions: '24" x 30"',
     description: 'A contemplative portrait capturing the quiet strength within solitude.',
-    imageUrl: 'https://images.unsplash.com/photo-1578301978693-85fa9c0320b9?w=800&h=600&fit=crop',
+    imageUrl: 'https://res.cloudinary.com/dj15ypnx8/image/upload/v1782740751/art-gallery/photo-1578301978693-85fa9c0320b9.jpg',
     category: 'Portrait'
   },
   {
@@ -52,7 +52,7 @@ export const paintings: Painting[] = [
     medium: 'Mixed Media',
     dimensions: '40" x 50"',
     description: 'The nostalgic beauty of Indian monsoon rains through texture and color.',
-    imageUrl: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&h=600&fit=crop',
+    imageUrl: 'https://res.cloudinary.com/dj15ypnx8/image/upload/v1782740752/art-gallery/photo-1507003211169-0a1dd7228f2d.jpg',
     category: 'Landscape'
   },
   {
@@ -63,7 +63,7 @@ export const paintings: Painting[] = [
     medium: 'Oil on Canvas',
     dimensions: '48" x 36"',
     description: 'The chaotic beauty of Mumbai streets captured in expressive brushstrokes.',
-    imageUrl: 'https://images.unsplash.com/photo-1547891654-e66ed7ebb968?w=800&h=600&fit=crop',
+    imageUrl: 'https://res.cloudinary.com/dj15ypnx8/image/upload/v1782740753/art-gallery/photo-1547891654-e66ed7ebb968.jpg',
     category: 'Abstract'
   },
   {
@@ -74,7 +74,7 @@ export const paintings: Painting[] = [
     medium: 'Acrylic on Canvas',
     dimensions: '36" x 36"',
     description: 'A celebration of nature\'s delicate beauty through intricate floral patterns.',
-    imageUrl: 'https://images.unsplash.com/photo-1578926288207-a90a5366759d?w=800&h=600&fit=crop',
+    imageUrl: 'https://res.cloudinary.com/dj15ypnx8/image/upload/v1782740753/art-gallery/photo-1578926288207-a90a5366759d.jpg',
     category: 'Still Life'
   }
 ];
@@ -86,7 +86,7 @@ export const exhibitions = [
     date: 'March 2024',
     venue: 'National Gallery of Modern Art, Mumbai',
     description: 'A collective exhibition featuring contemporary Indian artists exploring the diverse palette of Indian culture.',
-    image: 'https://images.unsplash.com/photo-1577720580479-7d839d829c73?w=800&h=400&fit=crop'
+    image: 'https://res.cloudinary.com/dj15ypnx8/image/upload/v1782740755/art-gallery/photo-1577720580479-7d839d829c73.jpg'
   },
   {
     id: '2',
@@ -94,7 +94,7 @@ export const exhibitions = [
     date: 'January 2024',
     venue: 'Art India Gallery, Delhi',
     description: 'An exploration of abstract expressionism by emerging and established artists.',
-    image: 'https://images.unsplash.com/photo-1561214115-f2f134cc4912?w=800&h=400&fit=crop'
+    image: 'https://res.cloudinary.com/dj15ypnx8/image/upload/v1782740756/art-gallery/photo-1561214115-f2f134cc4912.jpg'
   },
   {
     id: '3',
@@ -102,7 +102,7 @@ export const exhibitions = [
     date: 'November 2023',
     venue: 'Jehangir Art Gallery, Mumbai',
     description: 'Landscapes and nature-inspired works celebrating the beauty of the natural world.',
-    image: 'https://images.unsplash.com/photo-1544531586-fde5298cdd40?w=800&h=400&fit=crop'
+    image: 'https://res.cloudinary.com/dj15ypnx8/image/upload/v1782740757/art-gallery/photo-1544531586-fde5298cdd40.jpg'
   }
 ];
 
@@ -118,5 +118,5 @@ export const artistInfo = {
     'Featured in Art India Magazine (2021)',
     'Solo exhibition at Tate Modern, London (2020)'
   ],
-  image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=400&fit=crop'
+  image: 'https://res.cloudinary.com/dj15ypnx8/image/upload/v1782740757/art-gallery/photo-1494790108377-be9c29b29330.jpg'
 };

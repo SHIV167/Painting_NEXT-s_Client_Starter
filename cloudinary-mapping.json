@@ -1,0 +1,174 @@
+{
+  "results": [
+    {
+      "originalUrl": "https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?w=800&h=600&fit=crop",
+      "publicId": "art-gallery/photo-1579783902614-a3fb3927b6a5",
+      "cloudinaryUrl": "https://res.cloudinary.com/dj15ypnx8/image/upload/v1782740749/art-gallery/photo-1579783902614-a3fb3927b6a5.jpg",
+      "success": true
+    },
+    {
+      "originalUrl": "https://images.unsplash.com/photo-1541961017774-22349e4a1262?w=800&h=600&fit=crop",
+      "publicId": "art-gallery/photo-1541961017774-22349e4a1262",
+      "cloudinaryUrl": "https://res.cloudinary.com/dj15ypnx8/image/upload/v1782740750/art-gallery/photo-1541961017774-22349e4a1262.jpg",
+      "success": true
+    },
+    {
+      "originalUrl": "https://images.unsplash.com/photo-1578301978693-85fa9c0320b9?w=800&h=600&fit=crop",
+      "publicId": "art-gallery/photo-1578301978693-85fa9c0320b9",
+      "cloudinaryUrl": "https://res.cloudinary.com/dj15ypnx8/image/upload/v1782740751/art-gallery/photo-1578301978693-85fa9c0320b9.jpg",
+      "success": true
+    },
+    {
+      "originalUrl": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&h=600&fit=crop",
+      "publicId": "art-gallery/photo-1507003211169-0a1dd7228f2d",
+      "cloudinaryUrl": "https://res.cloudinary.com/dj15ypnx8/image/upload/v1782740752/art-gallery/photo-1507003211169-0a1dd7228f2d.jpg",
+      "success": true
+    },
+    {
+      "originalUrl": "https://images.unsplash.com/photo-1547891654-e66ed7ebb968?w=800&h=600&fit=crop",
+      "publicId": "art-gallery/photo-1547891654-e66ed7ebb968",
+      "cloudinaryUrl": "https://res.cloudinary.com/dj15ypnx8/image/upload/v1782740753/art-gallery/photo-1547891654-e66ed7ebb968.jpg",
+      "success": true
+    },
+    {
+      "originalUrl": "https://images.unsplash.com/photo-1578926288207-a90a5366759d?w=800&h=600&fit=crop",
+      "publicId": "art-gallery/photo-1578926288207-a90a5366759d",
+      "cloudinaryUrl": "https://res.cloudinary.com/dj15ypnx8/image/upload/v1782740753/art-gallery/photo-1578926288207-a90a5366759d.jpg",
+      "success": true
+    },
+    {
+      "originalUrl": "https://images.unsplash.com/photo-1577720580479-7d839d829c73?w=800&h=400&fit=crop",
+      "publicId": "art-gallery/photo-1577720580479-7d839d829c73",
+      "cloudinaryUrl": "https://res.cloudinary.com/dj15ypnx8/image/upload/v1782740755/art-gallery/photo-1577720580479-7d839d829c73.jpg",
+      "success": true
+    },
+    {
+      "originalUrl": "https://images.unsplash.com/photo-1561214115-f2f134cc4912?w=800&h=400&fit=crop",
+      "publicId": "art-gallery/photo-1561214115-f2f134cc4912",
+      "cloudinaryUrl": "https://res.cloudinary.com/dj15ypnx8/image/upload/v1782740756/art-gallery/photo-1561214115-f2f134cc4912.jpg",
+      "success": true
+    },
+    {
+      "originalUrl": "https://images.unsplash.com/photo-1544531586-fde5298cdd40?w=800&h=400&fit=crop",
+      "publicId": "art-gallery/photo-1544531586-fde5298cdd40",
+      "cloudinaryUrl": "https://res.cloudinary.com/dj15ypnx8/image/upload/v1782740757/art-gallery/photo-1544531586-fde5298cdd40.jpg",
+      "success": true
+    },
+    {
+      "originalUrl": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=400&fit=crop",
+      "publicId": "art-gallery/photo-1494790108377-be9c29b29330",
+      "cloudinaryUrl": "https://res.cloudinary.com/dj15ypnx8/image/upload/v1782740757/art-gallery/photo-1494790108377-be9c29b29330.jpg",
+      "success": true
+    },
+    {
+      "originalUrl": "https://cdn.shopify.com/s/files/1/1194/1498/files/Cropped_Image_1.jpg",
+      "publicId": "art-gallery/Cropped_Image_1_jpg",
+      "cloudinaryUrl": "https://res.cloudinary.com/dj15ypnx8/image/upload/v1782740759/art-gallery/Cropped_Image_1_jpg.jpg",
+      "success": true
+    },
+    {
+      "originalUrl": "https://cdn.shopify.com/s/files/1/1194/1498/files/phad1.png?v=1771499101&width=450&quality=80",
+      "publicId": "art-gallery/phad1_png",
+      "cloudinaryUrl": "https://res.cloudinary.com/dj15ypnx8/image/upload/v1782740760/art-gallery/phad1_png.png",
+      "success": true
+    },
+    {
+      "originalUrl": "https://cdn.shopify.com/s/files/1/1194/1498/files/st-2.png?v=1771411864&width=450&quality=80",
+      "publicId": "art-gallery/st-2_png",
+      "cloudinaryUrl": "https://res.cloudinary.com/dj15ypnx8/image/upload/v1782740761/art-gallery/st-2_png.png",
+      "success": true
+    },
+    {
+      "originalUrl": "https://cdn.shopify.com/s/files/1/1194/1498/files/1-1new.png?v=1771411863&width=450&quality=80",
+      "publicId": "art-gallery/1-1new_png",
+      "cloudinaryUrl": "https://res.cloudinary.com/dj15ypnx8/image/upload/v1782740762/art-gallery/1-1new_png.png",
+      "success": true
+    },
+    {
+      "originalUrl": "https://www.memeraki.com/cdn/shop/files/budget_artworks_desktop.jpg?v=1765877233&width=2600",
+      "publicId": "art-gallery/budget_artworks_desktop_jpg",
+      "cloudinaryUrl": "https://res.cloudinary.com/dj15ypnx8/image/upload/v1782740763/art-gallery/budget_artworks_desktop_jpg.jpg",
+      "success": true
+    },
+    {
+      "originalUrl": "https://www.memeraki.com/cdn/shop/files/budget_artworks_mobile_2.jpg?v=1765877217&width=768",
+      "publicId": "art-gallery/budget_artworks_mobile_2_jpg",
+      "cloudinaryUrl": "https://res.cloudinary.com/dj15ypnx8/image/upload/v1782740764/art-gallery/budget_artworks_mobile_2_jpg.jpg",
+      "success": true
+    },
+    {
+      "originalUrl": "https://www.memeraki.com/cdn/shop/files/shark_wall-5.png?v=1770962098&width=2600",
+      "publicId": "art-gallery/shark_wall-5_png",
+      "cloudinaryUrl": "https://res.cloudinary.com/dj15ypnx8/image/upload/v1782740766/art-gallery/shark_wall-5_png.png",
+      "success": true
+    },
+    {
+      "originalUrl": "https://www.memeraki.com/cdn/shop/files/bannerm10.png?v=1780300712&width=768",
+      "publicId": "art-gallery/bannerm10_png",
+      "cloudinaryUrl": "https://res.cloudinary.com/dj15ypnx8/image/upload/v1782740767/art-gallery/bannerm10_png.png",
+      "success": true
+    },
+    {
+      "originalUrl": "https://www.memeraki.com/cdn/shop/files/banner10.png?v=1780300730&width=2600",
+      "publicId": "art-gallery/banner10_png",
+      "cloudinaryUrl": "https://res.cloudinary.com/dj15ypnx8/image/upload/v1782740768/art-gallery/banner10_png.png",
+      "success": true
+    },
+    {
+      "originalUrl": "https://www.memeraki.com/cdn/shop/files/tree_of_life_m.jpg?v=1749111765&width=768",
+      "publicId": "art-gallery/tree_of_life_m_jpg",
+      "cloudinaryUrl": "https://res.cloudinary.com/dj15ypnx8/image/upload/v1782740769/art-gallery/tree_of_life_m_jpg.jpg",
+      "success": true
+    },
+    {
+      "originalUrl": "https://www.memeraki.com/cdn/shop/files/tree_of_life.jpg?v=1749111765&width=2600",
+      "publicId": "art-gallery/tree_of_life_jpg",
+      "cloudinaryUrl": "https://res.cloudinary.com/dj15ypnx8/image/upload/v1782740770/art-gallery/tree_of_life_jpg.jpg",
+      "success": true
+    },
+    {
+      "originalUrl": "https://www.memeraki.com/cdn/shop/files/pooja_room_banner-mobile_version.png?v=1775040175&width=768",
+      "publicId": "art-gallery/pooja_room_banner-mobile_version_png",
+      "cloudinaryUrl": "https://res.cloudinary.com/dj15ypnx8/image/upload/v1782740772/art-gallery/pooja_room_banner-mobile_version_png.png",
+      "success": true
+    },
+    {
+      "originalUrl": "https://www.memeraki.com/cdn/shop/files/gallery_walls_m.jpg?v=1749111765&width=768",
+      "publicId": "art-gallery/gallery_walls_m_jpg",
+      "cloudinaryUrl": "https://res.cloudinary.com/dj15ypnx8/image/upload/v1782740772/art-gallery/gallery_walls_m_jpg.jpg",
+      "success": true
+    },
+    {
+      "originalUrl": "https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?w=1920&q=80",
+      "publicId": "art-gallery/photo-1579783902614-a3fb3927b6a5",
+      "cloudinaryUrl": "https://res.cloudinary.com/dj15ypnx8/image/upload/v1782740773/art-gallery/photo-1579783902614-a3fb3927b6a5.jpg",
+      "success": true
+    }
+  ],
+  "urlMapping": {
+    "https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?w=800&h=600&fit=crop": "https://res.cloudinary.com/dj15ypnx8/image/upload/v1782740749/art-gallery/photo-1579783902614-a3fb3927b6a5.jpg",
+    "https://images.unsplash.com/photo-1541961017774-22349e4a1262?w=800&h=600&fit=crop": "https://res.cloudinary.com/dj15ypnx8/image/upload/v1782740750/art-gallery/photo-1541961017774-22349e4a1262.jpg",
+    "https://images.unsplash.com/photo-1578301978693-85fa9c0320b9?w=800&h=600&fit=crop": "https://res.cloudinary.com/dj15ypnx8/image/upload/v1782740751/art-gallery/photo-1578301978693-85fa9c0320b9.jpg",
+    "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&h=600&fit=crop": "https://res.cloudinary.com/dj15ypnx8/image/upload/v1782740752/art-gallery/photo-1507003211169-0a1dd7228f2d.jpg",
+    "https://images.unsplash.com/photo-1547891654-e66ed7ebb968?w=800&h=600&fit=crop": "https://res.cloudinary.com/dj15ypnx8/image/upload/v1782740753/art-gallery/photo-1547891654-e66ed7ebb968.jpg",
+    "https://images.unsplash.com/photo-1578926288207-a90a5366759d?w=800&h=600&fit=crop": "https://res.cloudinary.com/dj15ypnx8/image/upload/v1782740753/art-gallery/photo-1578926288207-a90a5366759d.jpg",
+    "https://images.unsplash.com/photo-1577720580479-7d839d829c73?w=800&h=400&fit=crop": "https://res.cloudinary.com/dj15ypnx8/image/upload/v1782740755/art-gallery/photo-1577720580479-7d839d829c73.jpg",
+    "https://images.unsplash.com/photo-1561214115-f2f134cc4912?w=800&h=400&fit=crop": "https://res.cloudinary.com/dj15ypnx8/image/upload/v1782740756/art-gallery/photo-1561214115-f2f134cc4912.jpg",
+    "https://images.unsplash.com/photo-1544531586-fde5298cdd40?w=800&h=400&fit=crop": "https://res.cloudinary.com/dj15ypnx8/image/upload/v1782740757/art-gallery/photo-1544531586-fde5298cdd40.jpg",
+    "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=400&fit=crop": "https://res.cloudinary.com/dj15ypnx8/image/upload/v1782740757/art-gallery/photo-1494790108377-be9c29b29330.jpg",
+    "https://cdn.shopify.com/s/files/1/1194/1498/files/Cropped_Image_1.jpg": "https://res.cloudinary.com/dj15ypnx8/image/upload/v1782740759/art-gallery/Cropped_Image_1_jpg.jpg",
+    "https://cdn.shopify.com/s/files/1/1194/1498/files/phad1.png?v=1771499101&width=450&quality=80": "https://res.cloudinary.com/dj15ypnx8/image/upload/v1782740760/art-gallery/phad1_png.png",
+    "https://cdn.shopify.com/s/files/1/1194/1498/files/st-2.png?v=1771411864&width=450&quality=80": "https://res.cloudinary.com/dj15ypnx8/image/upload/v1782740761/art-gallery/st-2_png.png",
+    "https://cdn.shopify.com/s/files/1/1194/1498/files/1-1new.png?v=1771411863&width=450&quality=80": "https://res.cloudinary.com/dj15ypnx8/image/upload/v1782740762/art-gallery/1-1new_png.png",
+    "https://www.memeraki.com/cdn/shop/files/budget_artworks_desktop.jpg?v=1765877233&width=2600": "https://res.cloudinary.com/dj15ypnx8/image/upload/v1782740763/art-gallery/budget_artworks_desktop_jpg.jpg",
+    "https://www.memeraki.com/cdn/shop/files/budget_artworks_mobile_2.jpg?v=1765877217&width=768": "https://res.cloudinary.com/dj15ypnx8/image/upload/v1782740764/art-gallery/budget_artworks_mobile_2_jpg.jpg",
+    "https://www.memeraki.com/cdn/shop/files/shark_wall-5.png?v=1770962098&width=2600": "https://res.cloudinary.com/dj15ypnx8/image/upload/v1782740766/art-gallery/shark_wall-5_png.png",
+    "https://www.memeraki.com/cdn/shop/files/bannerm10.png?v=1780300712&width=768": "https://res.cloudinary.com/dj15ypnx8/image/upload/v1782740767/art-gallery/bannerm10_png.png",
+    "https://www.memeraki.com/cdn/shop/files/banner10.png?v=1780300730&width=2600": "https://res.cloudinary.com/dj15ypnx8/image/upload/v1782740768/art-gallery/banner10_png.png",
+    "https://www.memeraki.com/cdn/shop/files/tree_of_life_m.jpg?v=1749111765&width=768": "https://res.cloudinary.com/dj15ypnx8/image/upload/v1782740769/art-gallery/tree_of_life_m_jpg.jpg",
+    "https://www.memeraki.com/cdn/shop/files/tree_of_life.jpg?v=1749111765&width=2600": "https://res.cloudinary.com/dj15ypnx8/image/upload/v1782740770/art-gallery/tree_of_life_jpg.jpg",
+    "https://www.memeraki.com/cdn/shop/files/pooja_room_banner-mobile_version.png?v=1775040175&width=768": "https://res.cloudinary.com/dj15ypnx8/image/upload/v1782740772/art-gallery/pooja_room_banner-mobile_version_png.png",
+    "https://www.memeraki.com/cdn/shop/files/gallery_walls_m.jpg?v=1749111765&width=768": "https://res.cloudinary.com/dj15ypnx8/image/upload/v1782740772/art-gallery/gallery_walls_m_jpg.jpg",
+    "https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?w=1920&q=80": "https://res.cloudinary.com/dj15ypnx8/image/upload/v1782740773/art-gallery/photo-1579783902614-a3fb3927b6a5.jpg"
+  }
+}

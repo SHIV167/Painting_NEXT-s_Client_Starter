@@ -16,22 +16,22 @@ export default function Home() {
 
   const categoryItems = [
     {
-      image: 'https://cdn.shopify.com/s/files/1/1194/1498/files/Cropped_Image_1.jpg',
+      image: 'https://res.cloudinary.com/dj15ypnx8/image/upload/v1782740759/art-gallery/Cropped_Image_1_jpg.jpg',
       title: 'Traditional Art',
       description: 'Explore our collection of traditional Indian artworks'
     },
     {
-      image: 'https://cdn.shopify.com/s/files/1/1194/1498/files/phad1.png?v=1771499101&width=450&quality=80',
+      image: 'https://res.cloudinary.com/dj15ypnx8/image/upload/v1782740760/art-gallery/phad1_png.png',
       title: 'Phad Paintings',
       description: 'Rajasthani folk art depicting mythological stories'
     },
     {
-      image: 'https://cdn.shopify.com/s/files/1/1194/1498/files/st-2.png?v=1771411864&width=450&quality=80',
+      image: 'https://res.cloudinary.com/dj15ypnx8/image/upload/v1782740761/art-gallery/st-2_png.png',
       title: 'Spiritual Art',
       description: 'Sacred and spiritual artwork for your space'
     },
     {
-      image: 'https://cdn.shopify.com/s/files/1/1194/1498/files/1-1new.png?v=1771411863&width=450&quality=80',
+      image: 'https://res.cloudinary.com/dj15ypnx8/image/upload/v1782740762/art-gallery/1-1new_png.png',
       title: 'Modern Art',
       description: 'Contemporary pieces with modern aesthetics'
     }
@@ -39,28 +39,28 @@ export default function Home() {
 
   const heroSlides = [
     {
-      desktopImage: 'https://www.memeraki.com/cdn/shop/files/budget_artworks_desktop.jpg?v=1765877233&width=2600',
-      mobileImage: 'https://www.memeraki.com/cdn/shop/files/budget_artworks_mobile_2.jpg?v=1765877217&width=768',
+      desktopImage: 'https://res.cloudinary.com/dj15ypnx8/image/upload/v1782740763/art-gallery/budget_artworks_desktop_jpg.jpg',
+      mobileImage: 'https://res.cloudinary.com/dj15ypnx8/image/upload/v1782740764/art-gallery/budget_artworks_mobile_2_jpg.jpg',
       alt: 'Budget Artworks'
     },
     {
-      desktopImage: 'https://www.memeraki.com/cdn/shop/files/shark_wall-5.png?v=1770962098&width=2600',
-      mobileImage: 'https://www.memeraki.com/cdn/shop/files/bannerm10.png?v=1780300712&width=768',
+      desktopImage: 'https://res.cloudinary.com/dj15ypnx8/image/upload/v1782740766/art-gallery/shark_wall-5_png.png',
+      mobileImage: 'https://res.cloudinary.com/dj15ypnx8/image/upload/v1782740767/art-gallery/bannerm10_png.png',
       alt: 'Banner Art'
     },
     {
-      desktopImage: 'https://www.memeraki.com/cdn/shop/files/banner10.png?v=1780300730&width=2600',
-      mobileImage: 'https://www.memeraki.com/cdn/shop/files/tree_of_life_m.jpg?v=1749111765&width=768',
+      desktopImage: 'https://res.cloudinary.com/dj15ypnx8/image/upload/v1782740768/art-gallery/banner10_png.png',
+      mobileImage: 'https://res.cloudinary.com/dj15ypnx8/image/upload/v1782740769/art-gallery/tree_of_life_m_jpg.jpg',
       alt: 'Tree of Life'
     },
     {
-      desktopImage: 'https://www.memeraki.com/cdn/shop/files/tree_of_life.jpg?v=1749111765&width=2600',
-      mobileImage: 'https://www.memeraki.com/cdn/shop/files/pooja_room_banner-mobile_version.png?v=1775040175&width=768',
+      desktopImage: 'https://res.cloudinary.com/dj15ypnx8/image/upload/v1782740770/art-gallery/tree_of_life_jpg.jpg',
+      mobileImage: 'https://res.cloudinary.com/dj15ypnx8/image/upload/v1782740772/art-gallery/pooja_room_banner-mobile_version_png.png',
       alt: 'Pooja Room'
     },
     {
-      desktopImage: 'https://www.memeraki.com/cdn/shop/files/banner10.png?v=1780300730&width=2600',
-      mobileImage: 'https://www.memeraki.com/cdn/shop/files/gallery_walls_m.jpg?v=1749111765&width=768',
+      desktopImage: 'https://res.cloudinary.com/dj15ypnx8/image/upload/v1782740768/art-gallery/banner10_png.png',
+      mobileImage: 'https://res.cloudinary.com/dj15ypnx8/image/upload/v1782740772/art-gallery/gallery_walls_m_jpg.jpg',
       alt: 'Gallery Walls'
     }
   ];
