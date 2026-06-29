@@ -11,7 +11,31 @@ interface EmailOptions {
 }
 
 export async function sendEmail({ to, subject, html, text }: EmailOptions) {
-  // Try SMTP first
+  // Skip SMTP on production and use Resend directly for better performance
+  if (process.env.NODE_ENV === 'production' && resend) {
+    try {
+      const { data, error } = await resend.emails.send({
+        from: process.env.RESEND_FROM || 'onboarding@resend.dev',
+        to,
+        subject,
+        html,
+        text: text || html.replace(/<[^>]*>/g, ''),
+      });
+
+      if (error) {
+        console.error('Resend error:', error);
+        return { success: false, error: error.message };
+      }
+
+      console.log('Email sent successfully via Resend:', data);
+      return { success: true, messageId: data?.id };
+    } catch (resendError) {
+      console.error('Resend error:', resendError);
+      return { success: false, error: resendError instanceof Error ? resendError.message : 'Unknown error' };
+    }
+  }
+
+  // Try SMTP for development or if Resend is not available
   try {
     const nodemailer = (await import('nodemailer')).default;
     
@@ -23,6 +47,9 @@ export async function sendEmail({ to, subject, html, text }: EmailOptions) {
         user: process.env.SMTP_USER,
         pass: process.env.SMTP_PASS,
       },
+      connectionTimeout: 5000, // 5 second timeout
+      greetingTimeout: 5000,
+      socketTimeout: 5000,
     });
     
     const mailOptions = {
