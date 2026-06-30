@@ -1,10 +1,7 @@
 import type { Metadata } from "next";
 import { Playfair_Display, Inter, Space_Grotesk } from "next/font/google";
 import "./globals.css";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
-import SmoothScroll from "@/components/SmoothScroll";
-import ScrollToTop from "@/components/ScrollToTop";
+import LayoutWrapper from "@/components/LayoutWrapper";
 import { ThemeProvider } from "@/components/ThemeProvider";
 
 // Elegant serif font for headings - perfect for art galleries
@@ -52,11 +49,7 @@ export default function RootLayout({
     >
       <body className="min-h-full flex flex-col" suppressHydrationWarning>
         <ThemeProvider>
-          <SmoothScroll />
-          <Header />
-          <main className="flex-1 pt-16">{children}</main>
-          <Footer />
-          <ScrollToTop />
+          <LayoutWrapper>{children}</LayoutWrapper>
         </ThemeProvider>
       </body>
     </html>
